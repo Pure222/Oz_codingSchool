@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    height: 100%;
+    background-color: #FCC41F;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: #FFFFFF;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 가운데 정렬 */
+    border-bottom: 1px solid #CCCCCC;
+    position: relative; /* position 추가 */
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: absolute; /* 위치를 조정하기 위해 position 추가 */
+    top: 16px;
+    left: 16px; /* 왼쪽 정렬 */
+}
+.user_pic {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #FCC41F;
+}
+.user_nick, .user_count {
+    margin: 5px;
+}
+.user_count {
+    font-size: 12px;
+    color: gray;
+}
+.date-header {
+    margin-top: 60px; /* 충분한 여백을 추가하여 날짜가 위쪽으로 이동하도록 설정 */
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FCC41F; /* 날짜 배경을 노란색으로 설정 */
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFFFFF; /* 날짜 텍스트 색상 흰색으로 */
+    text-align: center; /* 날짜 텍스트 중앙 정렬 */
+    width: 100%; /* 전체 너비를 사용하여 가운데 정렬 */
+}
+.settings-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    color: #333; /* 톱니바퀴 색상 */
+}
+.chat-screen {
+    flex: 1;
+    overflow-y: auto; /* 채팅 내용이 길어질 경우 스크롤 가능 */
+}
+.chat-form {
+    height: 120px;
+    background-color: #FFFFFF;
+}
+.chat-form_field {
+    height: 100%;
+    display: flex;
+}
+.chat-form_msg {
+    width: calc(100% - 120px);
+    height: 100%;
+    border: none;
+    resize: none;
+    font-size: 24px;
+    padding: 10px;
+}
+.chat-form_bt {
+    width: 120px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #FCC41F;
+    font-size: 18px;
+}
+.chat-form_msg:focus {
+    outline: none;
+}
+.chat-form_bt:active {
+    background-color: #CB9D12;
+}
